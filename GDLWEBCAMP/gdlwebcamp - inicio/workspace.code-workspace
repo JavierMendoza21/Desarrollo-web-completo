@@ -1,0 +1,16 @@
+{
+    "folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Aprendiendo js"
+		},
+		{
+			"path": "../../DOM Inicio"
+		}
+	],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "gdlwebcamp - inicio"
+    }
+}

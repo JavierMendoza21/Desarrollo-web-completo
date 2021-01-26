@@ -1,0 +1,59 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/** contenedor **/
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.site-barra {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5px;
+}
+
+.logo {
+    width: 120px;
+}
+
+.formulario {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.formulario label,
+.formulario input {
+    display: block;
+    width: 100%;
+}
+
+.formulario input {
+    padding: 10px 50px 10px 10px;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-group i {
+    font-size: 1.5rem;
+    color: #333333;
+    position: absolute;
+    top: 53%;
+    left: 93%;
+}

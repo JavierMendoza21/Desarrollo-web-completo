@@ -1,0 +1,1288 @@
+/*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */
+
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/** Globales **/
+
+.contenedor {
+    width: 95%;
+    margin: 0 auto;
+}
+
+@media (min-width: 480px) {
+    .contenedor {
+        width: 95%;
+    }
+}
+
+@media (min-width: 768px) {
+    .contenedor {
+        width: 90%;
+    }
+}
+
+@media (min-width: 992px) {
+    .contenedor {
+        width: 990%;
+        max-width: 110rem;
+    }
+}
+
+.seccion {
+    padding: 3rem 0;
+}
+
+.seccion p {
+    font-size: 1.92rem;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.84rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2.88rem;
+    color: #fe4918;
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.button {
+    font-family: 'Oswald', sans-serif;
+    background-color: #fe4918;
+    padding: 1rem 4rem;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    display: inline-block;
+    transition: background-color .3s ease-in-out;
+    border: 2px solid #fe4918;
+}
+
+.button.hollow,
+.button.hollow:hover {
+    background-color: white;
+    color: #fe4918;
+}
+
+.button.transparent {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+}
+
+.button.transparent:hover {
+    border: 2px solid #fe4918;
+}
+
+.button:hover {
+    background-color: #e33000;
+}
+
+.float-right {
+    float: right;
+}
+
+h2::after {
+    content: '';
+    margin: 0 auto;
+    background-image: url(../img/separador.png);
+    height: 3rem;
+    width: 10rem;
+    display: block;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/*Lettering*/
+
+h1.nombre-sitio span {
+    position: relative;
+    text-shadow: 0 0 3rem black;
+}
+
+@media (min-width: 992px) {
+    .char1 {
+        top: 2rem;
+        right: 2rem;
+    }
+    .char2 {
+        top: 0;
+        left: -2rem;
+    }
+    .char3 {
+        top: 1rem;
+        right: 2rem;
+    }
+    .char4 {
+        top: .5rem;
+        right: 1rem;
+    }
+    .char5 {
+        top: 1.5rem;
+        right: 1rem;
+    }
+    .char6 {
+        top: .5rem;
+        left: 1rem;
+    }
+    .char7 {
+        top: 2rem;
+        right: -1rem;
+    }
+    .char8 {
+        top: 0;
+        left: 1rem;
+    }
+    .char9 {
+        top: 1rem;
+        right: 2rem;
+    }
+    .char10 {
+        top: 2rem;
+        right: 2rem;
+    }
+}
+
+
+/** Header **/
+
+.hero {
+    background-image: url(../img/encabezado.jpg);
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+}
+
+.contenido-header {
+    padding-top: 4rem;
+}
+
+@media (min-width: 768px) {
+    .contenido-header {
+        padding-top: 1rem;
+    }
+}
+
+.redes-sociales {
+    text-align: center;
+}
+
+.redes-sociales a {
+    color: white;
+    font-size: 3rem;
+    margin-right: 2rem;
+}
+
+.redes-sociales a:last-of-type {
+    margin-right: 0;
+}
+
+.informacion-evento {
+    text-align: center;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .informacion-evento {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+.informacion-evento p {
+    margin: 0;
+    display: inline;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.informacion-evento p i {
+    color: #fe4918;
+    font-size: 3rem;
+}
+
+p.fecha {
+    float: left;
+}
+
+p.ciudad {
+    float: right;
+}
+
+p.slogan {
+    text-transform: none;
+}
+
+p.slogan span {
+    font-weight: bold;
+}
+
+h1.nombre-sitio {
+    font-size: 5.9vw;
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    h1.nombre-sitio {
+        font-size: 11.5vw;
+        line-height: 1;
+    }
+}
+
+
+/** .barra **/
+
+.barra {
+    background-color: #353535;
+    padding: 2rem 0;
+}
+
+.barra.fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /*  background-color: rgba(53, 53, 53, .8);*/
+    z-index: 2;
+}
+
+.logo img {
+    width: 80%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .logo img {
+        width: 33.3%;
+    }
+}
+
+
+/**Nav principal**/
+
+.navegacion-pricipal {
+    display: none;
+    width: 100%;
+}
+
+.navegacion-pricipal a {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color .3s ease-in-out;
+    width: 100%;
+    display: block;
+    text-align: center;
+    clear: both;
+    margin-bottom: 2rem;
+}
+
+.navegacion-pricipal a:hover {
+    background-color: #fe4918;
+}
+
+.navegacion-pricipal a:last-child {
+    border: 2px solid #fe4918;
+    color: #fe4918;
+    transition: color .3s ease-in-out;
+}
+
+.navegacion-pricipal a:last-child:hover {
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .navegacion-pricipal {
+        width: 66.6%;
+        float: right;
+        display: block!important;
+        text-align: right;
+    }
+}
+
+@media (min-width: 768px) {
+    .navegacion-pricipal a {
+        padding: 1rem 1rem;
+        display: inline-block;
+        width: auto;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+
+/** Menu mobil **/
+
+.menu-movil {
+    width: 6rem;
+    display: block;
+    float: right;
+    text-align: right;
+    margin-top: 1.2rem;
+}
+
+.menu-movil:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .menu-movil {
+        display: none;
+    }
+}
+
+.menu-movil span {
+    height: .8rem;
+    margin-bottom: .6rem;
+    background: white;
+    display: block;
+}
+
+
+/** Talleres **/
+
+section.programa {
+    position: relative;
+}
+
+.contenedor-video {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.contenido-programa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.programa-evento {
+    background-color: rgba(255, 255, 255, .8);
+    padding: 1.5rem;
+    margin-top: 8rem;
+}
+
+@media (min-width: 768px) {
+    .programa-evento {
+        width: 70%;
+    }
+}
+
+@media (min-width: 992px) {
+    .programa-evento {
+        width: 50%;
+    }
+}
+
+.menu-programa {
+    width: 100%;
+    border-bottom: 1px solid #fe4918;
+    padding-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .menu-programa {
+        display: table;
+    }
+}
+
+.menu-programa a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 1rem;
+    font-size: 1.92rem;
+    position: relative;
+}
+
+.menu-programa a.activo::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 2rem;
+    width: 3rem;
+    background-image: url(../img/talleres-flecha.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    bottom: -3rem;
+}
+
+@media (min-width: 768px) {
+    .menu-programa a {
+        display: table-cell;
+    }
+}
+
+.menu-programa a i,
+.detalle-evento p i {
+    color: #fe4918;
+    font-size: 2.56rem;
+    margin-right: .4rem;
+}
+
+
+/** Detalle evento **/
+
+.detalle-evento {
+    margin-top: 2rem;
+    border-bottom: 1px solid black;
+    padding: 2rem;
+    margin: 0 2rem;
+}
+
+.detalle-evento:last-of-type {
+    border: none;
+}
+
+.detalle-evento p {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+
+/** Invitados **/
+
+ul.lista-invitados li {
+    padding: 1rem;
+    float: left;
+}
+
+@media (min-width: 480px) {
+    ul.lista-invitados li {
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    ul.lista-invitados li {
+        width: 33.3%;
+    }
+}
+
+.invitado {
+    position: relative;
+    overflow: hidden;
+}
+
+.invitado img {
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    transition: filter .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+}
+
+.invitado img:hover {
+    filter: gray;
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.1);
+}
+
+.invitado p {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -20;
+    bottom: 0;
+    color: #e33000;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 1.5rem 1rem;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    transition: all .3s ease-in-out;
+}
+
+.invitado:hover p {
+    bottom: -80px;
+    opacity: 0;
+}
+
+
+/** Contador **/
+
+.parallax::before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-filter: brightness(.8);
+    filter: brightness(.8);
+}
+
+.contador {
+    position: relative;
+    height: auto;
+}
+
+.contador::before {
+    background-image: url(../img/bg-resumen.jpg);
+    content: '';
+}
+
+ul.resumen-evento {
+    position: relative;
+    padding: 12rem 0;
+}
+
+ul.resumen-evento li {
+    width: 50%;
+    float: left;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.4rem;
+}
+
+@media (min-width: 768px) {
+    ul.resumen-evento li {
+        width: 25%;
+    }
+}
+
+p.numero {
+    color: #fe4918;
+    font-size: 6.4rem;
+    display: block;
+    margin: 0 0 1rem 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/** Tabla de precios **/
+
+ul.lista-precios>li {
+    padding: 1rem;
+}
+
+@media (min-width: 768px) {
+    ul.lista-precios>li {
+        float: left;
+        width: 33.3%;
+    }
+}
+
+.tabla-precio {
+    border: 1px solid #e1e1e1;
+    background-color: white;
+    padding: 4rem 0;
+    text-align: center;
+    transition: all .3s ease-in-out;
+}
+
+.tabla-precio:hover {
+    transform: scale(1.1);
+    border: 1pz solid #fe4918;
+    box-shadow: 0px 0px 50px #666;
+}
+
+.tabla-precio ul li {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+    color: #868686;
+    line-height: 2.6;
+}
+
+.tabla-precio ul li::before {
+    font-family: 'FontAwesome';
+    display: inline-block;
+    vertical-align: baseline;
+    padding: 0 5px;
+    font-size: 2rem;
+    color: green;
+    -webkit-font-smoothing: antialiased;
+    content: '\f00c';
+}
+
+.tabla-precio h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+.tabla-precio p.numero {
+    color: black;
+    margin-top: 2rem;
+}
+
+
+/** MAPA **/
+
+.mapa {
+    height: 42rem;
+    z-index: 1;
+}
+
+
+/** Testimoniales **/
+
+.testimoniales {
+    padding-top: 2rem;
+}
+
+.testimonial {
+    padding: .1rem;
+}
+
+@media (min-width: 768px) {
+    .testimonial {
+        float: left;
+        width: 33.3%;
+    }
+}
+
+blockquote {
+    background-color: white;
+    border: 1px solid #e1e1e1;
+    position: relative;
+    margin: 0 0 1rem 0;
+    padding-bottom: 2rem;
+}
+
+blockquote p {
+    text-align: justify!important;
+    font-size: 1.6rem!important;
+    font-family: 'PT Sans', sans-serif;
+    padding: 0 2rem 0 6.5rem;
+}
+
+blockquote p::before {
+    content: '\201c';
+    position: absolute;
+    left: 1.3rem;
+    top: .8rem;
+    font-size: 12.8rem;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #fe4918;
+}
+
+footer.info-testimonial {
+    padding: 0;
+    background-color: transparent;
+}
+
+footer.info-testimonial img {
+    float: left;
+    width: 20%;
+    border-radius: 50%;
+    margin-left: 2rem;
+}
+
+footer.info-testimonial cite {
+    text-align: left;
+    color: #fe4918;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding-top: 2rem;
+    width: 66.6%;
+    float: right;
+    font-weight: bold;
+    font-style: normal;
+}
+
+footer.info-testimonial cite span {
+    color: #000000;
+    display: block;
+    text-transform: none;
+}
+
+
+/** Newsletter **/
+
+.newsletter {
+    position: relative;
+    height: auto;
+}
+
+.newsletter::before {
+    background-image: url(../img/bg-newsletter.jpg);
+    content: '';
+}
+
+.newsletter .contenido {
+    padding: 10rem 0;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.newsletter .contenido p {
+    font-size: 1.92rem;
+    text-transform: lowercase;
+}
+
+.newsletter .contenido h3 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 7vw;
+    font-family: 'PT Sans', sans-serif;
+}
+
+
+/** Cuenta regresiva **/
+
+.cuenta-regresiva ul li {
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.56rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .cuenta-regresiva ul li {
+        float: left;
+        width: 25%;
+        margin-bottom: 0;
+    }
+}
+
+
+/** Footer **/
+
+footer {
+    background-color: #353535;
+    padding-top: 2rem;
+    margin-top: 2rem;
+}
+
+footer .contenedor>div {
+    color: white;
+    padding: 0px 2rem;
+    font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+    footer .contenedor>div {
+        width: 33.3%;
+        float: left;
+    }
+}
+
+footer h3 {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 2rem;
+}
+
+footer h3 span {
+    color: #fe4918;
+}
+
+footer .ultimos-tweets li {
+    margin-bottom: 1rem;
+}
+
+footer nav.redes-sociales {
+    text-align: left;
+}
+
+p.copyright {
+    background-color: #2e2e2e;
+    text-align: center;
+    color: #ffffff;
+    padding: 1rem 0;
+    margin: 2rem 0 0 0;
+    font-size: 1.5rem;
+}
+
+
+/** INTERNAS **/
+
+
+/*Conferencia*/
+
+.galeria a {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+
+/* Registro*/
+
+body.conferencia .navegacion-pricipal .activo {
+    border-bottom: 2px solid #fe4918;
+}
+
+form.registro {
+    font-size: 1.5rem;
+}
+
+form.registro h3 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 2rem 0 0 0;
+}
+
+form.registro label {
+    margin-bottom: .5rem;
+    font-weight: bold;
+}
+
+form.registro h4 {
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid #fe4918;
+    padding-bottom: 1rem;
+    font-size: 1.92rem;
+}
+
+div.caja {
+    background-color: #ffffff;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+div.campo {
+    padding: 2rem;
+}
+
+.registro div.campo input {
+    padding: .8rem .5rem;
+    text-transform: capitalize;
+}
+
+#email {
+    text-transform: unset;
+}
+
+#error {
+    color: red;
+    text-align: left;
+    clear: both;
+}
+
+@media (min-width: 768px) {
+    div.campo {
+        float: left;
+        width: 33.3%;
+    }
+}
+
+div.paquetes .tabla-precio:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+div.paquetes .tabla-precio input {
+    display: block;
+    clear: both;
+    width: 10rem;
+    margin: 1rem auto 0 auto;
+}
+
+.contenido-dia {
+    padding: 2rem;
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .contenido-dia>div {
+        float: left;
+        width: 33.3%;
+    }
+}
+
+.contenido-dia>div p {
+    text-align: left;
+}
+
+.contenido-dia>div label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.contenido-dia>div input {
+    margin-right: 1rem;
+}
+
+.contenido-dia>div label time {
+    color: #fe4918;
+    font-weight: bold;
+}
+
+.resumen p {
+    font-size: 1.92rem;
+    text-transform: uppercase;
+}
+
+.resumen .extras {
+    float: left;
+    width: 50%;
+    padding: 3rem;
+}
+
+.resumen .extras .orden {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.orden select {
+    width: 100%;
+}
+
+.extras .orden input {
+    margin: 1rem 0 0 0;
+}
+
+.resumen .total {
+    float: right;
+    width: 50%;
+    padding: 3rem;
+}
+
+.resumen input {
+    display: block;
+    margin: 1rem auto;
+}
+
+#lista_productos {
+    display: none;
+    background-color: #e1e1e1;
+    padding: 2rem;
+}
+
+#suma_total {
+    text-align: center;
+    font-size: 3.2rem;
+    color: #fe4918;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
+}
+
+
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
+}
+
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+    visibility: hidden;
+}
+
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+    thead {
+        display: table-header-group;
+    }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
